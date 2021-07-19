@@ -17,7 +17,7 @@ a{
 header{
 	display: flex;
 	padding: 40px;
-	background-color: rgb(143, 165, 230);
+	background-color: #F08080;
 	color: white;
 }
 	header h1{
@@ -35,7 +35,7 @@ section{
 	padding: 40px;
 	height: 500px;
 	margin-bottom: 40px;
- 	background-color: white;
+ 	background-color: whitesmoke;
 }
 	section h1{
 		margin-bottom: 12px;
@@ -47,5 +47,5 @@ section{
 footer{
 	padding: 40px;
 	background-color: rgb(146, 161, 250);
-	color: white;
+	color: black;
 }
