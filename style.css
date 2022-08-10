@@ -1,51 +1,242 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-decoration: none;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next";
+  background-image: url("https://github.com/chiyonomaru/Portfolio/blob/main/image/%E3%81%97%E3%81%90%E3%82%8C%E8%83%8C%E6%99%AF%E9%80%8F%E9%81%8E%E5%88%87%E3%82%8A%E6%8A%9C%E3%81%8D.png");
+  background-size: cover;
 }
 
-a{
-	color:darkturquoise;
+.content{
+  margin-top: 80px;
 }
 
-#container{
-	margin:auto;
-	width: 70%;
+.box{
+  height:  500px;
+  width:  500px;
+  margin: 10px auto;
+  background: #ccc;
+  color: #fff;
+}
+li {
+  list-style:none;
 }
 
-header{
-	display: flex;
-	padding: 40px;
-	background-color: #F08080;
-	color: white;
+.header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  padding: 5px;
+  background-color: #ced2d1;
+  color: #ffffff;
+  height: 90px;
 }
-	header h1{
-		margin-right: auto;
-	}
-	header ul{
-		display: flex;
-	}
-	header li{
-		width: auto;
-		margin-right: 20px;
-	}
 
-section{
-	padding: 40px;
-	height: 500px;
-	margin-bottom: 40px;
- 	background-color: whitesmoke;
+.header-logo {
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 40px;
 }
-	section h1{
-		margin-bottom: 12px;
-	}
-	section p {
-		margin-bottom: 40px;
-	}
 
-footer{
-	padding: 40px;
-	background-color: rgb(146, 161, 250);
-	color: black;
+ul{
+  display: flex;
+}
+.header-list nav ul {
+  font-size: 40px;
+  float: left;
+  margin-right: auto;
+  padding: 12px 0px 10px;
+}
+
+.header-list nav ul li a {
+ justify-content: flex-end;
+  margin: 0 20px;
+  padding: 20px 40px;
+  font-size: 20px;
+}
+
+.main {
+  padding: 100px 80px;
+}
+.copy-container span {
+  color: #000000;
+}
+
+.contents {
+ justify-content: center;
+  height: 500px;
+  margin: 100px auto;
+}
+
+.section-title {
+  font-size: 28px;
+  padding-bottom: : 15px;
+  margin-bottom: 50px;
+}
+
+}
+.contents-item {
+  float: left;
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#MenuButton{
+  display: none;
+}
+
+#MenuList{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: auto;
+}
+
+  #MenuList ul {
+    display: flex;
+    flex-direction:row;
+  }
+
+  #MenuList li {
+    width: auto;
+    padding: 0 1em;
+    border-bottom: none;
+  }
+
+  #MenuList a {
+    color: white;
+  }
+
+@media only screen and (max-width: 768px) {
+
+h1 {
+  width: 300px;
+  text-align: center;
+}
+
+}
+  #MenuButton{
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+  }
+
+a {
+  background-color: #ff9a9e;
+  display: block;
+  padding:  20px 0;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+ul {
+  width: 300px;margin: 0 auto;
+}
+
+li {
+  margin-bottom: 20px;
+}
+    .MenuButtonLine {
+      position: relative;
+      display: block;
+      height: 2px;
+      width: 30px;
+      background: #FFF;
+      transition: ease .5s;
+    }
+
+    .MenuButtonLine:nth-child(1) {
+        top: 0;
+    }
+    .MenuButtonLine:nth-child(2) {
+        margin: 8px 0;
+    }
+    .MenuButtonLine:nth-child(3) {
+        top: 0;
+    }
+
+    #MenuButton.open .MenuButtonLine:nth-child(1) {
+      top: 10px;
+      transform: rotate(135deg);
+    }
+
+    #MenuButton.open .MenuButtonLine:nth-child(2) {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+
+    #MenuButton.open .MenuButtonLine:nth-child(3) {
+      top: -10px;
+      transform: rotate(-135deg);
+    }
+
+  #MenuList {  /* Default Display None */
+    display: none;
+
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(50,55,54,0.7);
+  }
+
+    #MenuList ul {
+      flex-direction: column;
+    }
+
+    #MenuList li{
+      width: 100%;
+      padding: 0;
+      border-bottom: 1px solid #CCC;
+    }
+
+    #MenuList a{
+      display: block;
+      width: 100%;
+      padding: 0.8rem 2rem;
+    }
+
+}
+
+#wrapper {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 40px;
+  background-color: #dddddd;
+  margin-bottom: 40px;
+}
+
+ h1 {
+  margin-bottom: 1rem;
+  width: 300px;
+  text-align: center;
+
+}
+
+.contact h1 {
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+
+footer {
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+  background-color: #ffffff;
+
 }
